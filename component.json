@@ -1,0 +1,9 @@
+{
+    "name": "组件名称",
+    "description": "组件的简单描述",
+    "repos": "http://gitlab.58corp.com/fecom-fe/jquery",
+    "tag": "master",
+    "reposType": "gitlab",
+    "dependencies": [],
+    "version": "1.0.0"
+}

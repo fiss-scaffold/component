@@ -1,0 +1,7 @@
+# tools folders
+node_modules
+component
+
+# log files
+*.log
+*.err
