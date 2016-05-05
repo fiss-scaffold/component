@@ -1,6 +1,6 @@
 # tools folders
 node_modules
-component
+components
 
 # log files
 *.log
