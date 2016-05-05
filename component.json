@@ -1,9 +1,14 @@
 {
-    "name": "组件名称",
-    "description": "组件的简单描述",
-    "repos": "http://gitlab.58corp.com/fecom-fe/jquery",
-    "tag": "master",
-    "reposType": "gitlab",
+    "name": "组件名",
+    "description": "一句明了的描述",
+    "protocol": "gitlab",
+    "gitlab": {
+        "author": "fecom-fe",
+        "token": ""
+    },
     "dependencies": [],
-    "version": "1.0.0"
+    "exclude": [
+        "test",
+        "README.md"
+    ]
 }
