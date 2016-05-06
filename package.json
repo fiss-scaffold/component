@@ -1,0 +1,25 @@
+{
+  "name": "component",
+  "version": "1.0.0",
+  "description": "My awesome component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "major": "fiss version major && git push --follow-tags",
+    "minor": "fiss version minor && git push --follow-tags",
+    "patch": "fiss version patch && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiss-scaffold/component.git"
+  },
+  "keywords": [
+    "component"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiss-scaffold/component/issues"
+  },
+  "homepage": "https://github.com/fiss-scaffold/component#readme"
+}
