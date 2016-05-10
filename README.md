@@ -7,10 +7,9 @@
 + [fiss](https://github.com/zhangyihua/fiss)全局安装**最新版本**
 
 ### 新建组件
-通过模板新建一个组件的目录，比如在本地新建名字为`myComp`的组件
+1. 新建组件前，请在[Gitlab](http://gitlab.58corp.com/)上新建仓库，然后`git clone`到本地
+2. 然后通过组件模板初始化一个组件的目录
 ```bash
-mkdir myComp
-cd myComp
 fiss init componet
 ```
 
