@@ -4,6 +4,7 @@
     "protocol": "gitlab",
     "gitlab": {
         "author": "fecom-fe",
+        "domain": "http://gitlab.58corp.com/",
         "token": ""
     },
     "dependencies": [],
