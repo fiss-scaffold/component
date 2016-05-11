@@ -2,6 +2,9 @@
 
 ## 组件开发规范
 
+### 完整示例
+[component-example](https://github.com/fiss-scaffold/component-example)
+
 ### 环境依赖
 + [nodejs](https://nodejs.org/en/)：版本>=4
 + [fiss](https://github.com/zhangyihua/fiss)全局安装**最新版本**
@@ -31,7 +34,7 @@ fiss init component
 
 综上所述：
 + **项目**应该配置的项有`name`、`description`、`dir`、`dependencies`
-+ **组件**应该配置的项有`name`、`version`、`exclude`、`dependencies`
++ **组件**应该配置的项有`name`、`version`、`exclude`、`dependencies`、`main`
 
 ### 版本号
 组件的版本号，如非必要情况请不要手动修改，而是通过`fiss version <releaseType>`或者`npm scripts`命令更新。查看版本号或者更新版本号请参考[fiss-command-version](https://github.com/fiss-scaffold/fiss-command-version)
@@ -48,15 +51,26 @@ fiss init component
 
 ### 添加依赖
 组件开发过程中可通过`fiss install`命令添加依赖，`fiss install`命令可参考[fiss-command-install](https://github.com/fiss-scaffold/fiss-command-install)。
-+ 如果不指定版本号进行组件安装，将安装组件的最新版本，所以**请事先确认要安装的版本号**！
++ 通过`fiss install <component>`，将安装组件的最新版本，所以**请事先确认要安装的版本号**！
++ 安装组件时会默认将组件的名称和版本号保存到`component.json`中
 + 通过`component.json`配置`dependencies`项安装时请指定版本号
-+ 通过`fiss install <component>`命令安装组件时请附带版本号
 
-### 组件开发
+### JS组件开发
++ 开发组件时应该遵循统一的AMD、CMD后者CommonJS规范
 
+### JS组件入口文件
+简单模块（不需要编译打包直接可以使用的模块）：
++ 开发和依赖时请都使用`index.js`作为入口文件
++ 模块内有多个文件请使用相对路径进行依赖
+复杂模块（需要编译和打包后才可以使用的模块：）
++ 如果依赖时使用`index.js`作为入口文件
+  + `index.js`应该为编译打包后合成的文件
+  + 开发请使用其他文件作为入口文件
++ 如果依赖时不使用`index.js`作为入口文件
+  + 请在文档中说明依赖时的入口文件，比如`dist/index.js`
 
 ### 文档
-+ 可以通过编辑`README.md`文件来简要说明组件的应用场景、使用方法和添加代码示例。
++ 编辑组件的`README.md`文件来简要说明组件的应用场景、使用方法以及添加代码示例
 
 ### 测试
 + `test`目录用于存放组件的单元测试用例
