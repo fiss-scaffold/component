@@ -1,16 +1,13 @@
 {
     "name": "组件名",
     "description": "一句明了的描述",
-    "protocol": "gitlab",
-    "gitlab": {
-        "author": "fecom-fe",
-        "domain": "http://gitlab.58corp.com/",
-        "token": ""
-    },
     "dependencies": [],
     "exclude": [
         "test",
+        "docs",
+        "example",
         "README.md"
     ],
+    "main": ""
     "version": "0.0.0"
 }
