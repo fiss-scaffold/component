@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fiss-scaffold/component.git"
+    "url": "git+http://gitlab.58corp.com/groups/fecom-fe/component.git"
   },
   "keywords": [
     "component"
@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fiss-scaffold/component/issues"
+    "url": "http://gitlab.58corp.com/groups/fecom-fe/component/issues"
   },
-  "homepage": "https://github.com/fiss-scaffold/component#readme"
+  "homepage": "http://gitlab.58corp.com/groups/fecom-fe/component#readme"
 }
